@@ -1,0 +1,326 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #232B2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    height: 800px;
+    background-color: #1B1B1B;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: black 3px 3px 3px;
+    z-index: 1;
+}
+
+.headingCon {
+    font-size: xxx-large;
+    font-style: italic;
+    font-weight: 600;
+    color: transparent;
+    padding: 20px 0px 0px 40px;
+    height: 58px;
+    z-index: 2;
+}
+.headingCon.ready {
+    color: white;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-out {
+    100% {
+        opacity: 0;
+    }
+}
+
+.gameList {
+    flex-grow: 1;
+    margin-inline: 40px;
+    margin: 10px 40px 40px 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    overflow-y: auto;
+    row-gap: 35px;
+
+    visibility: hidden;
+    opacity: 0;
+}
+.gameList.ready {
+    animation: fade-in 500ms forwards ease;
+}
+
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: #2a2c2c;
+    border: 2px solid black;
+    border-radius: 100vh;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 34, 34);
+    border: 2px solid black;
+    border-radius: 100vh;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: #2a2c2c;
+    box-shadow: rgb(20, 20, 20) 2px 2px 2px;
+    position: relative;
+
+    opacity: 0;
+}
+.game.ready {
+    cursor: pointer;
+    transition: 250ms;
+}
+.game.ready:hover {
+    box-shadow: rgb(20, 20, 20) 5px 5px 5px;
+    transform: scale(1.0075);
+}
+
+.gameIcon {
+    width: 200px;
+}
+p {
+    margin: 0;
+}
+.game p {
+    margin-top: 7px;
+    cursor: default;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1
+    }
+}
+
+.game[appear] {
+    animation: fade-in 500ms forwards ease;
+}
+
+@keyframes lineAnimation {
+    100% {
+        width: 100%;
+    }
+}
+
+.lineCon {
+    margin-inline: 30px;
+}
+
+.line {
+    height: 5px;
+    background-color: white;
+    border: transparent;
+    border-radius: 100vh;
+    width: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.line[appear] {
+    animation: lineAnimation 1.5s forwards ease;
+}
+
+@media screen and (height < 880px) {
+    .container {
+        height: 600px;
+    }
+}
+
+@keyframes fade-in2 {
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes fade-out2 {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#menuCon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu {
+    position: relative;
+    width: 800px;
+    height: 580px;
+    background-color: #2a2c2c;
+    border: 2.5px solid black;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    display: none;
+}
+.background {
+    position: absolute;
+    width: 800px;
+    height: 580px;
+    background-color: #2a2c2c;
+    border: 2.5px solid black;
+    z-index: 4;
+
+    opacity: 0;
+    display: none;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.background[appear] {
+    animation:
+        slide-up 750ms forwards,
+        fade-in 500ms forwards;
+}
+
+#menu[appear] {
+    animation: fade-in 250ms forwards ease;
+}
+#menu[disappear] {
+    animation: fade-out 250ms forwards ease;
+}
+
+#blur {
+    z-index: 4;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    display: none;
+}
+#blur[appear] {
+    animation: fade-in2 250ms forwards ease;
+}
+#blur[disappear] {
+    animation: fade-out2 250ms forwards ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gameLinkBtn {
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba(27, 27, 27, 0.9);
+    color: white;
+    font-size: xx-large;
+    padding: 10px 20px 10px 20px;
+    border: black solid 2px;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 250ms;
+    z-index: 2;
+}
+
+.gameLinkBtn:hover, .menuHeading:hover, .menuDescription:hover, .creator:hover {
+    box-shadow: black 1px 1px 1px;
+    background-color: #1B1B1B;
+}
+
+#menuBackgroundImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menuShadow {
+    position: absolute;
+    z-index: 1;
+}
+
+.menuHeading {
+    z-index: 2;
+    color: white;
+    font-size: xxx-large;
+    background-color: rgba(27, 27, 27, 0.9);
+    border: 2px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 30px;
+    transition: 250ms;
+    cursor: default;
+}
+
+.menuDescription {
+    z-index: 2;
+    color: white;
+    font-size: large;
+    background-color: rgba(27, 27, 27, 0.9);
+    border: 2px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 1rem;
+    text-align: center;
+    bottom: 105px;
+    position: absolute;
+    transition: 250ms;
+    cursor: default;
+}
+
+.creator {
+    z-index: 2;
+    background-color: rgba(27, 27, 27, 0.9);
+    border: 2px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0.5rem;
+    position: absolute;
+    cursor: default;
+    transition: 250ms;
+    color: white;
+    font-size: large;
+    bottom: 30px;
+    left: 30px;
+}
