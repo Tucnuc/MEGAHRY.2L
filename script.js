@@ -60,7 +60,21 @@ const gameStatsArray = {
         img: './Assets-Library/magchessLarge.png',
         link: 'https://m-brachtl.github.io/chess_web/index.html',
         creator: 'Dev: Matěj Brachtl'
-    }
+    },
+    kostky: {
+        name: 'Kostky',
+        description: 'Chceš si zahrát kostky?<br>Není problém! Vyzvi kamaráda a porovnejte své síly.<br>Kdo první získá 10000 bodů vyhrává.',
+        img: './Assets-Library/kostkyLarge.png',
+        link: 'https://github.com/HellusJ/PRG_zaverecnaprace_pygame',
+        creator: 'Dev: Jakub Hellus'
+    },
+    game: {
+        name: '',
+        description: '',
+        img: './Assets-Library/.png',
+        link: '',
+        creator: 'Dev: '
+    },
 }
 const gameStatsKeys = Object.keys(gameStatsArray);
 
