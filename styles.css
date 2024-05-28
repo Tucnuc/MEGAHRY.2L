@@ -324,3 +324,9 @@ a {
     bottom: 30px;
     left: 30px;
 }
+
+.singleLine {
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
