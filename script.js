@@ -52,14 +52,14 @@ const gameStatsArray = {
         description: 'RPG webová hra s příběhem.<br>Probojuj se až 10 zónami plných nepřátel.<br>Staň se nejsilnějším!',
         img: './Assets-Library/legendOfMaxwellLarge.png',
         link: 'https://tucnuc.github.io/Legend-of-Maxwell/menu.html',
-        creator: 'Tvůrce: Adam Černý'
+        creator: 'Dev: Adam Černý'
     },
-    game: {
-        name: '',
-        description: '',
-        img: './Assets-Library/.png',
-        link: '',
-        creator: 'Tvůrce: '
+    chess: {
+        name: 'Magchess',
+        description: 'Máš rád šachy? Tak si pojď zahrát!<br>Hraj s kamarádem nebo proti počítači.',
+        img: './Assets-Library/magchessLarge.png',
+        link: 'https://m-brachtl.github.io/chess_web/index.html',
+        creator: 'Dev: Matěj Brachtl'
     }
 }
 const gameStatsKeys = Object.keys(gameStatsArray);
