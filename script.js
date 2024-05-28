@@ -68,6 +68,13 @@ const gameStatsArray = {
         link: 'https://github.com/HellusJ/PRG_zaverecnaprace_pygame',
         creator: 'Dev: Jakub Hellus'
     },
+    ruleta: {
+        name: 'Ruská Ruleta',
+        description: 'Vyzkoušejte vaše štěstí a taktické myšlení.<br>Teď ještě v nejnebezpečnější hře na světě.',
+        img: './Assets-Library/ruletaLarge.png',
+        link: 'https://github.com/gigashot/Russian-roulette',
+        creator: 'Dev: Marek Eichert'
+    },
     game: {
         name: '',
         description: '',
