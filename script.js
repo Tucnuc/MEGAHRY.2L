@@ -75,6 +75,13 @@ const gameStatsArray = {
         link: 'https://github.com/gigashot/Russian-roulette',
         creator: 'Dev: Marek Eichert'
     },
+    clicker: {
+        name: 'Krbec Clicker',
+        description: 'Uklikej pana Krbce.<br>Vytvoř co nejvíc projektů!',
+        img: './Assets-Library/clickerLarge.jpg',
+        link: 'https://github.com/mackovikSPSEOL/Zaverecna-prace-Python',
+        creator: 'Dev: Matyáš Mackovík'
+    },
     game: {
         name: '',
         description: '',
