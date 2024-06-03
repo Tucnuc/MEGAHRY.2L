@@ -82,11 +82,18 @@ const gameStatsArray = {
         link: 'https://github.com/mackovikSPSEOL/Zaverecna-prace-Python',
         creator: 'Dev: Matyáš Mackovík'
     },
+    kuro: {
+        name: 'Kuro',
+        description: 'Ponořte se do světa starověkého Japonska jako statečný samuraj,<br>který čelí různým výzvám a pastem, aby našel cestu ven.',
+        img: './Assets-Library/kuroLarge.png',
+        link: 'https://github.com/Ihura42/rock-paper-scissors',
+        creator: 'Dev: Illia Hura'
+    },
     paper: {
         name: 'Kámen, nůžky, papír',
         description: 'Zahrajte si "Kámen, nůžky, papír" a uvidíte,<br>kdo je mistr štěstí a taktiky!',
         img: './Assets-Library/paperLarge.png',
-        link: 'https://github.com/Ihura42/rock-paper-scissors',
+        link: 'https://github.com/Ihura42/kuro_game',
         creator: 'Dev: Illia Hura'
     },
     game: {
