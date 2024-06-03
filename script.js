@@ -82,6 +82,13 @@ const gameStatsArray = {
         link: 'https://github.com/mackovikSPSEOL/Zaverecna-prace-Python',
         creator: 'Dev: Matyáš Mackovík'
     },
+    paper: {
+        name: 'Kámen, nůžky, papír',
+        description: 'Zahrajte si "Kámen, nůžky, papír" a uvidíte,<br>kdo je mistr štěstí a taktiky!',
+        img: './Assets-Library/paperLarge.png',
+        link: 'https://github.com/Ihura42/rock-paper-scissors',
+        creator: 'Dev: Illia Hura'
+    },
     game: {
         name: '',
         description: '',
