@@ -96,6 +96,20 @@ const gameStatsArray = {
         link: 'https://github.com/Ihura42/kuro_game',
         creator: 'Dev: Illia Hura'
     },
+    cubiq: {
+        name: 'CUBIQ',
+        description: 'Arkádová plošinovka, kde je vaším cílem<br>sesbírat všechny body a dostat se až na konec.<br>Pozor ale na tmavě zelené čtverce!',
+        img: './Assets-Library/cubeLarge.png',
+        link: 'https://github.com/TomasHoncik/Zaverecny_Projekt_PRG',
+        creator: 'Dev: Tomáš Hončík'
+    },
+    snake: {
+        name: 'Snake',
+        description: 'Zahrajte si klasického hada!<br>Tentokrát i s chutnými myši.',
+        img: './Assets-Library/snakeLarge.png',
+        link: 'https://github.com/fia42192/pygame',
+        creator: 'Dev: Jakub Fiala'
+    },
     game: {
         name: '',
         description: '',
